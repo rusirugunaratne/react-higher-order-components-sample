@@ -15,6 +15,9 @@ const Navbar = () => (
     <Link style={style} to='/profile'>
       Profile
     </Link>
+    <Link style={style} to='/users'>
+      Users
+    </Link>
   </nav>
 );
 

@@ -7,15 +7,11 @@ const withAuthentication = (WrappedComponent) => {
     const [authenticated, setAuthenticated] = useState(false);
 
     useEffect(() => {
-      //authentication logic
-      setAuthenticated(false);
-    }, []);
-
-    useEffect(() => {
+      // actual  authentication logic goes here
       if (!authenticated) {
         navigate("/");
       }
-    }, [authenticated]);
+    }, []);
 
     return <WrappedComponent {...props} />;
   };
